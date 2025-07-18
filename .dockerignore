@@ -1,0 +1,8 @@
+.venv/*
+README.md
+.gitignore
+client.py
+__pycache__/*
+build.bat
+run.bat
+dummy
