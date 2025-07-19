@@ -8,3 +8,6 @@ dependencies = [
     "requests>=2.32.4",
     "streamlit>=1.47.0",
 ]
+
+[dependency-groups]
+dev = []

@@ -13,10 +13,11 @@
 # def add_item(item:str):
 #     """Adds an item to the list."""
 #     items.append(item)
-#     print(f"Item '{item}' added to the list.")  
+#     print(f"Item '{item}' added to the list.")
 
 # Create a function to get sqrt of a number
 import numpy as np
+
 
 def get_sqrt(n):
     print("Calling square root function from backend...")

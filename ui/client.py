@@ -1,5 +1,5 @@
-import streamlit as st
 import requests
+import streamlit as st
 
 st.title("Square Root Calculator")
 
@@ -23,7 +23,7 @@ if st.button("Calculate Square Root"):
 #     print(f"Response from server: {response.json()}")
 # else:
 #     print(f"Failed to get response, status code: {response.status_code}")
-    
+
 # # Make a POST request to create a greeting
 # greeting_url = "http://localhost:8000/greetings"
 # name = "Alice"
@@ -31,4 +31,4 @@ if st.button("Calculate Square Root"):
 # if greeting_response.status_code == 200:
 #     print(f"Greeting response: {greeting_response.json()}")
 # else:
-#     print(f"Failed to create greeting, status code: {greeting_response.status_code}")   
+#     print(f"Failed to create greeting, status code: {greeting_response.status_code}")
