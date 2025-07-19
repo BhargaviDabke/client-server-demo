@@ -1,0 +1,26 @@
+# Create a docker compose file to run both the server and client
+version: '3.8'
+services:
+  fastapi-server:
+    # build:
+    #   context: .
+    #   dockerfile: server/server.Dockerfile
+    ports:
+      - "8000:8000"
+    networks:
+      - app-network
+    image: fastapi-server
+
+  streamlit-client:
+    # build:
+    #   context: .
+    #   dockerfile: ui/client.Dockerfile
+    ports:
+      - "8501:8501"
+    image: streamlit-client
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
