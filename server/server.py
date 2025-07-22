@@ -1,8 +1,8 @@
 # create a fastapi instance and import the necessary modules
-import uvicorn
 
 # import functions from backend.py and add routes
 # from backend import print_items, add_item
+import uvicorn
 from backend import get_sqrt
 from fastapi import FastAPI
 from pydantic import BaseModel

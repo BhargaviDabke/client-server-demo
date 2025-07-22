@@ -9,12 +9,12 @@ COPY --from=ghcr.io/astral-sh/uv:latest /uv /uvx /bin/
 
 COPY pyproject.toml .
 
-COPY uv.lock . 
+COPY uv.lock .
 
-RUN uv sync   
+RUN uv sync
 
 EXPOSE 8501
 
-COPY . . 
+COPY . .
 
 CMD ["uv", "run", "streamlit", "run", "client.py"]

@@ -8,6 +8,7 @@ dependencies = []
 
 [dependency-groups]
 dev = [
+    "pre-commit>=4.2.0",
     "ruff>=0.12.4",
 ]
 
@@ -26,15 +27,14 @@ select = [
     # isort
     "I",
 ]
-  
+
 [tool.ruff]
-line-length = 88
+line-length = 200
 fix = true
 include = ["*.py"]
 output-format = "grouped"
 show-fixes = true
-  
-  
+
+
 [tool.ruff.format]
 docstring-code-format = true
-
