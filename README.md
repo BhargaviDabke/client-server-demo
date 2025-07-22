@@ -9,3 +9,5 @@
 - uv run pre-commit run --all-files
 - Pre-commit will run all hooks before making any commit thus avoiding mistakes before adding it to Git
 
+
+
