@@ -1,0 +1,13 @@
+
+name: GitHub action demo
+on: 
+  push:
+    branches:
+      - dev
+
+jobs:
+  job-number-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greeting
+        run: echo "Hello"
