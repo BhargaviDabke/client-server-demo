@@ -12,8 +12,11 @@ jobs:
       - name: Clone Github
         uses: actions/checkout@v4
 
-      - name: Build docker image
-        run: docker build -t client-server-image .
+      - name: Build server docker image
+        run: docker build -t server-image -f server/server.Dockerfile  server/
+      
+      - name: Build client docker image
+        run: docker build -t streamlit-client -f ui/client.Dockerfile ui/
  
 
   
