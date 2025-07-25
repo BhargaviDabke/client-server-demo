@@ -6,8 +6,17 @@ on:
       - dev
 
 jobs:
-  job-number-1:
+  Greetings:
     runs-on: ubuntu-latest
     steps:
       - name: Greeting
-        run: echo "Hello"
+        run: |
+          echo "Hello"
+          echo "Good morning"
+  Bye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send goodbye message
+        run: echo "Good bye"
+  
+
