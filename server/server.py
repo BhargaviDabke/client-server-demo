@@ -50,5 +50,11 @@ def create_user(user: UserDetails):
 #     add_item(item)
 #     return {"message": f"Item '{item}' added successfully."}
 
+
+@app.get("/check")
+def print_check():
+    return {"message": "Check request complete!"}
+
+
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)

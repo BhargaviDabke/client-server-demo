@@ -10,6 +10,6 @@
 - Pre-commit will run all hooks before making any commit thus avoiding mistakes before adding it to Git
 
 # Adding changes
-
+- Added printing check function in server.py file
 
 
